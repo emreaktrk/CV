@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/colorPrimary">
+
+    <com.akturk.cv.design.atom.HeaderAtom
+        android:id="@+id/me_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        tools:text="Emre Akturk"
+        tools:textSize="22sp"
+        tools:textStyle="bold"/>
+
+    <com.akturk.cv.design.atom.SubHeaderAtom
+        android:id="@+id/me_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        tools:text="Software Engineer | Istanbul"
+        tools:textSize="18sp"
+        tools:textStyle="bold"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <com.akturk.cv.design.atom.LineAtom
+        android:id="@+id/me_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@android:color/white"
+        tools:text="Lorem ipsum"
+        tools:textSize="14sp"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <com.akturk.cv.design.molecule.PhoneMolecule
+        android:id="@+id/me_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"/>
+
+    <com.akturk.cv.design.molecule.MailMolecule
+        android:id="@+id/me_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"/>
+</android.support.v7.widget.LinearLayoutCompat>
