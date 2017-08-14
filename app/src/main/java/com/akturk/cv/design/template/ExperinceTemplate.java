@@ -41,7 +41,7 @@ public class ExperinceTemplate extends BaseFragment implements Template {
     }
 
     public void loadExperinces() {
-        DataStore<Experince> collection = DataStore.collection("experince", Experince.class, StoreType.NETWORK, Client.sharedInstance());
+        DataStore<Experince> collection = DataStore.collection("experince", Experince.class, StoreType.CACHE, Client.sharedInstance());
         collection.find(new KinveyListCallback<Experince>() {
             @Override public void onSuccess(List<Experince> list) {
                 _list.setLayoutManager(new LinearLayoutManager(getContext()));
