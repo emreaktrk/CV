@@ -30,7 +30,7 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file('keys/release.jks')
+            storeFile file('keys/release')
             storePassword '123456'
             keyAlias 'emreaktrk'
             keyPassword '123456'
